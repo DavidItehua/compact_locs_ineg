@@ -1,7 +1,8 @@
+#!/bin/bash
 rm -r Cats_Descarga/
 cd "./Compact_inegi_dbLocs"
 
-folder_inegi_del = (
+folder_inegi_del=(
 	"AGEEML_20233271140141.csv"
 	"cat_edos.csv"
 	"cp_sepomex.csv"
@@ -11,7 +12,7 @@ folder_inegi_del = (
 	"ramo.csv"
 	"subtipo_inmueble.csv"
 	"tipo_inmueble.csv"
-)
+	)
 
 for ele in ${folder_inegi_del[*]}; do
 	rm $ele
